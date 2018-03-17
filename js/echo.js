@@ -133,3 +133,23 @@
   return echo;
 
 });
+
+
+/*缓冲进度条 start*/
+/** 
+ * 显示loading(加载)动画 
+ * @param {[type]} tip_text [提示的文字] 
+ * @return {[type]}     [description] 
+ */
+(function buffer_tip_show(tip_text){ 
+ $("#buffer_tip").html(tip_text ? tip_text : '请稍等'); 
+ $("#buffer").removeClass("hidden"); 
+} );
+/** 
+ * 不显示loading(加载)动画 
+ * @return {[type]}     [description] 
+ */
+(function buffer_tip_hidden(){ 
+ $("#buffer").addClass("hidden"); 
+} );
+/*缓冲进度条 end*/
