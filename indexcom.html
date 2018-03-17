@@ -3307,7 +3307,17 @@ document.onscroll = refrush;
 
 	
 <script type="text/javascript"> 
-window.onload=function(){
+
+var n=$pre4y_main.length;
+...
+$img[0].onload=function(){    ...
+    n--;
+    if(!n){
+        //执行其他JS代码
+    }
+};
+	
+	window.onload=function(){
    $('.buffer').fadeOut();  
     
  }
